@@ -1,0 +1,14 @@
+[0m20:06:50.346621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f012c9f7ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f012a606760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f012a606520>]}
+
+
+============================== 20:06:50.391739 | bec38b79-ed2d-45f2-bb35-459ffade8c84 ==============================
+[0m20:06:50.391739 [info ] [MainThread]: Running with dbt=1.6.1
+[0m20:06:50.393201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --profiles-dir .', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:06:50.394877 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:06:50.395942 [debug] [MainThread]: Command `dbt seed` failed at 20:06:50.395830 after 0.06 seconds
+[0m20:06:50.396637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f012c9f7ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f012a606400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f012a606220>]}
+[0m20:06:50.397493 [debug] [MainThread]: Flushing usage events
